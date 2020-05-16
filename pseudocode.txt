@@ -1,0 +1,26 @@
+Authentication System Pseudo Code
+function main():
+	SET number of tries to zero
+	DISPLAY login screen
+	INCREMENT number of tries
+	GET username
+	GET password
+	CONVERT password to hash
+	VERIFY username and password
+	IF incorrect username and password
+		INCREMENT number of tries
+		IF number of tries exceeds limit of 3
+			NOTIFY user
+			QUIT program
+		GET username
+		GET password
+		CONVERT password to hash
+		VERIFY username and password
+	ELSE IF correct password
+		OPEN user's file
+		READ file
+		DISPLAY file contents
+	ELSE IF quit program
+		QUIT program
+	GET user input to logout
+	QUIT program
